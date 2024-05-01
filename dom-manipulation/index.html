@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="../dom-manipulation/style/style.css">
+    <script src="https://accounts.google.com/gsi/client" async></script>
     <script src="https://kit.fontawesome.com/a7778cc541.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,8 +45,20 @@
                 </div>
 
                 <div class="buttons">
-                    <a href="" class="signbtn"><button class="signbtn">Sign In</button></a>
-                    <a href="" class="google"><button class="google"><i class="fa fa-google" aria-hidden="true"></i> Sign in with Google</button></a>
+                    <input type="button" class="signbtn" onclick="location.href='';" value="Sign in" />
+                        <div id="g_id_onload"
+                            data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                            data-login_uri="https://your.domain/your_login_endpoint"
+                            data-auto_prompt="false">
+                        </div>
+                        <div class="g_id_signin"
+                            data-type="standard"
+                            data-size="large"
+                            data-theme="outline"
+                            data-text="sign_in_with"
+                            data-shape="rectangular"
+                            data-logo_alignment="left">
+                        </div>
                 </div>
 
                 <div class="register-menu">
@@ -61,5 +74,4 @@
 
     
 </body>
-
 </html>
