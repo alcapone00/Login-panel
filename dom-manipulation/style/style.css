@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    margin-top: 60px;
+    padding: 15px 30px 40px 30px;
+    width: 500px;
+    border-radius: 5px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container>i{
+    height: 20px;
+}
+
+.mainlogo{
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.logotext{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 35px;
+    margin: 40px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#wrong{
+    color: white;
+}
+
+.login-form>input{
+    height: 50px;
+    margin-bottom: 25px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    background-color: aliceblue;
+}
+
+input[type=text], [type=password]{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.forgot-psw{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.remember-me{
+    display: flex;
+    gap: 7px;
+}
+
+.forgot-psw>a{
+    color: red;
+    text-decoration: none;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 15px;
+}
+
+.signbtn>a:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+}
+
+.google:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+}
+
+.signbtn{
+    display: flex;
+    background-color: black;
+    height: 45px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 7px;
+}
+
+.signbtn>button{
+    all: unset;
+}
+
+.google{
+    display: flex;
+    background-color: aliceblue;
+    height: 45px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    width: auto;
+}
+
+.google>i{
+    position: absolute;
+    left: 55px;
+}
+
+.google>button{
+    all: unset;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.register-menu{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 25px;
+}
+
+.register-menu>a{
+    color: red;
+    text-decoration: none;
+}
