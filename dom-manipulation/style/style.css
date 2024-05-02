@@ -14,7 +14,7 @@ body {
 
 .container {
   position: relative;
-  margin-top: 60px;
+  margin-top: 50px;
   padding: 15px 30px 40px 30px;
   width: 500px;
   border-radius: 5px;
@@ -42,7 +42,7 @@ body {
   font-weight: 500;
   text-align: center;
   line-height: 35px;
-  margin: 40px;
+  margin: 30px;
 }
 
 .login-form {
@@ -69,10 +69,16 @@ input[type="text"],
   padding-left: 20px;
 }
 
+.wrongEmail, .wrongPassword{
+  color: red;
+  padding-bottom: 15px;
+  display: none;
+}
+
 .forgot-psw {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .remember-me {
@@ -89,24 +95,19 @@ input[type="text"],
   display: flex;
   flex-direction: column;
   width: auto;
-  gap: 15px;
+  gap: 10px;
 }
 
 .signbtn {
-  display: flex;
   background-color: black;
-  height: 45px;
+  height: 40px;
   border: 1px solid black;
   text-decoration: none;
   justify-content: center;
-  text-align: center;
   color: aliceblue;
-  border-radius: 7px;
+  border-radius: 4px;
   cursor: pointer;
-}
-
-.signbtn > button {
-  all: unset;
+  text-align: center;
 }
 
 .register-menu {

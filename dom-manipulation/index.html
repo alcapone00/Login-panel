@@ -28,14 +28,14 @@
                 <h1 class="logotext">One Account <br> Many possibilities</h1>
             </div>
 
+            <form class="login-form" method="post" name="form" onsubmit="return validated()">
 
+                <input type="text" id="username" placeholder="Email address or Username" name="username">
+                <p class="wrongEmail" id="wrongEmail">Please write correct Email adress</p>
 
+                <input type="password" id="password" placeholder="Enter Password" name="password">
 
-            <form class="login-form">
-
-                <input type="text" placeholder="Email address or Username" name="uname" required>
-
-                <input type="password" placeholder="Enter Password" name="pword" required>
+                <p class="wrongPassword" id="wrongPassword">Please write correct Password</p>
 
                 <div class="forgot-psw">
                     <div class="remember-me">
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="buttons">
-                    <input type="button" class="signbtn" onclick="location.href='';" value="Sign in" />
+                    <button type="submit" class="signbtn">Sign in</button>
                         <div id="g_id_onload"
                             data-client_id="YOUR_GOOGLE_CLIENT_ID"
                             data-login_uri="https://your.domain/your_login_endpoint"
@@ -72,6 +72,6 @@
     </main>
 
 
-    
+    <script src="../dom-manipulation/script.js"></script>
 </body>
 </html>
