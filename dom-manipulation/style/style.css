@@ -69,7 +69,7 @@ input[type="text"],
   padding-left: 20px;
 }
 
-.wrongEmail, .wrongPassword{
+.login-form #wrongEmail, #wrongPassword{
   color: red;
   padding-bottom: 15px;
   display: none;
