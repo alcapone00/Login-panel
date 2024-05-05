@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Restore account</title>
+    <title>Create account</title>
 </head>
 <body>
 
@@ -28,20 +28,24 @@
                 <h1 class="logotext">One Account <br> Many possibilities</h1>
             </div>
 
-            <form class="login-form"  name="form">
+            <form class="login-form"  name="form" method="post" onsubmit="return usernameValidated()">
 
-                <h1 id="recovery">Thanks, we have sent You email, to recover Your account</h1>
-                <input type="text" id="usernameRecovery" placeholder="To recover your account write your email adress" name="usernameRecovery">
+                <p id="wrongUsername">Your username should have more than 6 characters</p>
+                <input type="text" id="accountUsername" placeholder="Write your username" name="accountUsername">
+
                 <p id="wrongEmail">Please write correct Email adress</p>
+                <input type="text" id="username" placeholder="Write your email address" name="username">
+
+                <p id="wrongPassword">Your password should have more than 6 characters</p>
+                <input type="password" id="password" placeholder="Write your password" name="password">
+
+                <p id="wrongSecondPassword">Passwords do not match, try again</p>
+                <input type="password" id="secondPassword" placeholder="Write again your password" name="secondPassword">
 
                 <div class="buttons">
-                    <input type="button" id="restoreButton" onclick="recoveryRemove(), recoveryValidated()"  Value="Restore account" class="signbtn">
-                    <a href="./index.html" id="back"><button type="button">Back</button></a>
-                </div>
+                    <button type="submit" class="signbtn">Sign in</button>
 
-                <div class="register-menu">
-                    <p>Not a member yet?</p>
-                    <a href="./sign_up.html">Sign up</a>
+                    <a href="./index.html" id="back"><button type="button" class="back">Back</button></a>
                 </div>
 
             </form>

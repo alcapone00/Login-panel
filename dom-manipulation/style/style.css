@@ -14,7 +14,7 @@ body {
 
 .container {
   position: relative;
-  margin-top: 70px;
+  margin-top: 60px;
   padding: 15px 30px 40px 30px;
   width: 500px;
   border-radius: 5px;
@@ -69,7 +69,7 @@ input[type="text"],
   padding-left: 20px;
 }
 
-.login-form #wrongEmail, #wrongPassword{
+.login-form #wrongEmail, #wrongPassword, #wrongUsername, #wrongSecondPassword{
   color: red;
   padding-bottom: 15px;
   display: none;
