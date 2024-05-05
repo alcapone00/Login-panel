@@ -1,14 +1,19 @@
 var username = document.forms['form']['username'];
 var password = document.forms['form']['password'];
+var usernameRecovery = document.forms['form']['usernameRecovery'];
 
 var email_error = document.getElementById('wrongEmail');
 var pass_error = document.getElementById('wrongPassword');
+var recovery = document.getElementById('recovery');
 
 username.addEventListener('textInput', emailVerify);
 password.addEventListener('textInput', passVerify);
+usernameRecovery.addEventListener('textInput', recoveryRemove);
 
 function validated(){
-    if(username.value.length < 8){
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailRegex.test(username.value)){
         username.focus();
         username.style.border = "1px solid red";
         email_error.style.display = "block";
@@ -23,7 +28,9 @@ function validated(){
 }
 
 function emailVerify(){
-    if(username.value.length <= 8){
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailRegex.test(username.value)){
         username.style.border = "1px solid"
         email_error.style.display = "none"
         return true
@@ -36,4 +43,28 @@ function passVerify(){
         pass_error.style.display = "none"
         return true
     }
+}
+
+
+function recoveryValidated(){
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailRegex.test(usernameRecovery.value)){
+        usernameRecovery.focus();
+        usernameRecovery.style.border = "1px solid red";
+        email_error.style.display = "block";
+        return false
+    }
+}
+
+function recoveryRemove(){
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailRegex.test(usernameRecovery.value)){
+        usernameRecovery.focus();
+        usernameRecovery.style.display = "none";
+        recoveryMessage.style.display = "block";
+        return true
+    }
+
 }

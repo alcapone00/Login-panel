@@ -14,7 +14,7 @@ body {
 
 .container {
   position: relative;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 15px 30px 40px 30px;
   width: 500px;
   border-radius: 5px;
@@ -98,16 +98,32 @@ input[type="text"],
   gap: 10px;
 }
 
-.signbtn {
+.signbtn, #back {
+  text-align: center;
   background-color: black;
   height: 40px;
   border: 1px solid black;
   text-decoration: none;
-  justify-content: center;
   color: aliceblue;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 15px;
+}
+
+.buttons>a{
+  justify-content: center;
+  display: flex;
   text-align: center;
+}
+
+.buttons>a>button{
+  background-color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  color: aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .register-menu {
@@ -120,6 +136,12 @@ input[type="text"],
 .register-menu > a {
   color: red;
   text-decoration: none;
+}
+
+.login-form #recovery{
+  display: none;
+  text-align: center;
+  font-size: 25px;
 }
 
 @media only screen and (max-width: 700px) {
